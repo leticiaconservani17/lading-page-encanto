@@ -1,0 +1,38 @@
+.header {
+    background-color: $corPrincipal;
+    position: sticky;
+    width: 100%;
+    z-index: 10;
+
+    &__list {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 15%;
+        height: 80px;
+        align-items: center;
+        margin: 0;
+
+        &-item {
+
+            img {
+                max-width: 100px;
+            }
+
+            p {
+                font-weight: bold;
+                padding: 10px 15px;
+                border-radius: 50px;
+                color: $corSecundariaDeTexto;
+                cursor: pointer;
+                border: solid 1px $corSecundariaDeTexto;
+                transition: background-color 0.3s, color 0.3s;
+            }
+
+            p:hover {
+                background-color: $corSecundariaDeTexto;
+                color: $corDeFundo;
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@use './utilities/variables.scss';
+
+.elenco{
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    min-height: 100vh;
+    padding: 5.7vw 16vw;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

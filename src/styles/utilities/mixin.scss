@@ -1,0 +1,12 @@
+@import 'variables.scss';
+
+@mixin text($fontSize: $fontSizeMixin) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: $corPrincialDeTexto;
+}
+
+@mixin title($fontSize: $fontSizeMixinTitle) {
+    @include text($fontSize);
+    color: $corSecundariaDeTexto;
+}

@@ -1,0 +1,42 @@
+@import './utilities/mixin.scss';
+@import './utilities/variables.scss';
+@import './utilities/reset.scss';
+
+//Components 
+
+@import '_header';
+@import '_hero';
+
+body{
+    font-family: sans-serif;
+}
+
+.text--big {
+    @include text(18px);
+}
+
+.text {
+    @include text;
+}
+
+.text--small {
+    @include text(12px);
+}
+
+.title--big {
+    @include title(44px);
+}
+
+.title {
+    @include title(40px);
+}
+
+.title--small {
+    @include title(28px);
+}
+
+.link-text {
+    @include text(18px);
+    color: $corSecundariaDeTexto;
+    text-decoration: underline;
+}

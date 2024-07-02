@@ -1,0 +1,24 @@
+{
+  "name": "ladin_page",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "grunt": "grunt",
+    "build": "grunt build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.6.1",
+    "grunt-concurrent": "^3.0.0",
+    "grunt-contrib-htmlmin": "^3.1.0",
+    "grunt-contrib-imagemin": "^4.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-htmlmin": "^0.1.4",
+    "grunt-replace": "^2.0.2",
+    "sass": "^1.77.6"
+  },
+  "description": ""
+}
