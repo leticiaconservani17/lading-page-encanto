@@ -89,15 +89,15 @@ module.exports = function(grunt) {
         watch: {
             sass: {
                 files: ['src/styles/**/*.scss'],
-                tasks: ['sass:development']
+                tasks: ['sass']
             },
             imagemin: {
                 files: ['src/images/**/*'],
-                tasks: ['imagemin:dynamic']
+                tasks: ['imagemin']
             },
             html: {
                 files: ['src/index.html'],
-                tasks: ['htmlmin:dist', 'replace:dist']
+                tasks: ['htmlmin', 'replace']
             }
         },
         concurrent: {

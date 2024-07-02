@@ -1,13 +1,99 @@
 @use './utilities/variables.scss';
 
-.elenco{
+.elenco {
     align-items: center;
     box-sizing: border-box;
     display: flex;
-    min-height: 100vh;
+    max-width: 100%;
     padding: 5.7vw 16vw;
     position: relative;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: $corDeFundo;
+    flex-direction: column;
+
+    &__title--big {
+        font-size: 38px;
+        width: 100%;
+        color: $corSecundariaDeTexto;
+        font-weight: bold;
+        padding-bottom: 38px;
+        text-align: left;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    &__grid-item {
+        padding: 10px;
+        max-width: 200px;
+        margin: auto;
+
+        &__photo-wrapper {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+    
+            &:hover .elenco__grid-item__photo {
+                opacity: 0.3;
+            }
+    
+            &__info:hover {
+                opacity: 1;
+            }
+
+            &__info {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+                border-radius: 15px;
+
+                &__hover {
+                    font-size: 1em;
+                    margin: 10px 0 5px;
+                    text-align: center;
+                    line-height: 1.4;
+                }
+            }
+        }
+
+        &__photo {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            border-radius: 15px;
+            transition: opacity 0.3s ease;
+        }
+
+        &__name {
+            padding-top: 10px;
+            font-size: 1.2em;
+            margin: 10px 0 5px;
+            color: $corSecundariaDeTexto;
+        }
+
+        &__actor {
+            font-size: 1em;
+            color: $corPrincialDeTexto;
+        }
+    }
 }
