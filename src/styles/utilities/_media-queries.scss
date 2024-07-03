@@ -1,0 +1,30 @@
+// Defina os breakpoints
+$breakpoint-small: 576px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 992px;
+$breakpoint-extra-large: 1200px;
+
+// Media queries
+@mixin respond-to-small {
+    @media (max-width: #{$breakpoint-small}) {
+        @content;
+    }
+}
+
+@mixin respond-to-medium {
+    @media (max-width: #{$breakpoint-medium}) {
+        @content;
+    }
+}
+
+@mixin respond-to-large {
+    @media (max-width: #{$breakpoint-large}) {
+        @content;
+    }
+}
+
+@mixin respond-to-extra-large {
+    @media (max-width: #{$breakpoint-extra-large}) {
+        @content;
+    }
+}

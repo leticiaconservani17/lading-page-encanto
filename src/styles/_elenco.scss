@@ -1,4 +1,5 @@
 @use './utilities/variables.scss';
+@import './utilities/media-queries';
 
 .elenco {
     align-items: center;
@@ -94,6 +95,28 @@
         &__actor {
             font-size: 1em;
             color: $corPrincialDeTexto;
+        }
+    }
+
+    @include respond-to-medium {
+
+        &__title--big {
+            text-align: center;
+        }
+
+        &__grid {
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        }
+    }
+
+    @include respond-to-small {
+
+        &__title--big {
+            text-align: center;
+        }
+
+        &__grid {
+            grid-template-columns: 1fr;
         }
     }
 }
